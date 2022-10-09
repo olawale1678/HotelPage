@@ -1,0 +1,245 @@
+.home__image {
+    position: relative;
+}
+
+.home__image .home__btn {
+    position: absolute;
+    width: 100%;
+    top: 40%;
+    transform: translateY(-50%);
+    display: flex;
+    justify-content: space-between;
+    padding: 0 1.7rem;
+}
+
+.home__image .home__btn button {
+    /* z-index: 10; */
+    cursor: pointer;
+    outline: none;
+    border: none;
+    height: 3.7rem;
+    width: 3.7rem;
+    border-radius: 50%;
+    background-color: rgba(225, 225, 225, .6);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.home__image .home__btn button span {
+    display: inline-flex;
+    height: 2.8rem;
+    border-radius: 50%;
+    width: 2.8rem;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.3rem;
+    font-weight: 300;
+    background-color: var(--bg-primary);
+}
+
+.home__image .img {
+    width: 100%;
+    overflow: hidden;
+    height: 78vh;
+}
+
+.home__image .img img {
+    height: 100%;
+    width: 100%;
+}
+
+button.slick-arrow.slick-next {
+    background-color: black;
+}
+
+button.slick-arrow.slick-prev {
+    background-color: black;
+}
+
+.home form {
+    background-color: rgba(0, 0, 0, .7);
+    position: absolute;
+    width: 30rem;
+    padding: 1rem 2rem;
+    top: 28%;
+    border-radius: 5px;
+    left: 10%;
+}
+
+.home form .text {
+    color: white;
+}
+
+.home form .text h1 {
+    font-size: 2rem;
+    font-weight: 500;
+    margin-bottom: .5rem;
+}
+
+.home form .text p {
+    margin-bottom: .5rem;
+    font-size: 1.1rem;
+}
+
+.home form input {
+    padding: .6rem 1rem .6rem 0;
+    text-indent: 10px;
+    margin: .5rem 0;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+}
+
+.home form .city input,
+.home form .room input,
+.home form .btn input {
+    width: 100%;
+}
+
+.home form .btn input {
+    border: none;
+    color: white;
+    font-size: 1.2rem;
+    outline: none;
+    background-color: var(--bg-primary);
+    border: 1px solid transparent;
+    transition: var(--transition);
+}
+
+.home form .btn input:hover {
+    background-color: transparent;
+    border-color: var(--bg-primary);
+    color: var(--color-primary);
+}
+
+.home form .dates input,
+.home form .ages input {
+    width: 100%;
+}
+
+.home form .dates input:first-child,
+.home form .ages input:first-child {
+    margin-right: .7rem;
+}
+
+.home__destination-heading {
+    text-align: center;
+}
+
+.home__destination-heading h1 {
+    font-size: 2.4rem;
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+
+.home__destination {
+    margin: 5rem auto;
+}
+
+.home .destination .destination__card {
+    padding-bottom: 3rem;
+}
+
+.home__destination-heading .underLine span:nth-child(2) {
+    color: var(--color-toggle);
+    transform: translateY(-.2rem);
+    padding: 0 5px;
+    display: inline-block;
+}
+
+.home__destination-heading .underLine span:nth-child(1),
+.home__destination-heading .underLine span:nth-child(3) {
+    /* background-color: var(--bg-primary);
+    padding: .5px 11px;
+    border-radius: 50%; */
+    color: var(--color-primary);
+}
+
+.home__destination-heading .underLine {
+    padding: .7rem 0;
+}
+
+@media screen and (max-width: 890px) {
+    .home {
+        margin-top: 11vh;
+    }
+
+    .home__image .img {
+        height: 89vh;
+    }
+
+    .home__image .img img {
+        height: 89vh;
+    }
+
+    .home__image .home__btn {
+        top: 50%;
+    }
+
+    .home form {
+        position: absolute;
+        top: 60%;
+        left: 50%;
+        transform: translateY(-50%) translateX(-50%);
+    }
+
+    .home__destination-heading h1 {
+        font-size: 2.2rem;
+    }
+
+    .home__destination {
+        margin: 7rem auto;
+    }
+}
+
+@media screen and (max-width: 670px) {
+    .home__image .home__btn {
+        margin-top: 3rem;
+        position: static;
+    }
+}
+
+@media screen and (max-width: 428px) {
+    .home__image .home__btn {
+        position: absolute;
+        top: 35%;
+    }
+
+    .home__image .img {
+        height: 50vh;
+    }
+
+    .home__image {
+        margin-bottom: 58vh;
+    }
+
+    .home__image .img img {
+        height: 100%;
+    }
+
+    .home form {
+        width: 100%;
+        top: 88vh;
+        right: 0;
+    }
+
+    .home__destination-heading h1 {
+        font-size: 1.7rem;
+        padding-bottom: .8rem;
+    }
+}
+
+@media screen and (max-width: 320px) {
+
+    .home form {
+        width: 100%;
+        top: 105%;
+        right: 0;
+    }
+
+    .home__image {
+        margin-bottom: 88vh;
+    }
+
+}

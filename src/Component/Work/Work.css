@@ -1,0 +1,40 @@
+.work {
+    display: grid;
+    grid-gap: 1.6rem;
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+    margin-bottom: 4rem;
+}
+
+.work__item {
+    padding: 2.5rem 1.3rem;
+    box-shadow: 0 0 1rem var(--boxshadow);
+    text-align: center;
+    color: var(--color-toggle);
+}
+
+.work__text h1 {
+    font-weight: 500;
+    padding: 1rem;
+    font-size: 1.2rem;
+}
+
+.work__text p {
+    font-size: .8rem;
+    line-height: 20px;
+}
+
+.image__bottom {
+    padding-bottom: 4rem;
+    scrollbar-width: none;
+}
+
+.img {
+    height: 70%;
+    width: 70%;
+    overflow: hidden;
+}
+
+.img img {
+    height: 100%;
+    width: 100%;
+}

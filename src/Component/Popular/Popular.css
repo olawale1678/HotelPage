@@ -1,0 +1,82 @@
+.popular__container {
+    border: 1px solid rgb(213, 210, 210);
+    padding: 1rem;
+    /* background-color: white; */
+    margin: 0 1rem;
+    box-shadow: 0 0 1rem var(--boxshadow);
+    margin-bottom: 1rem;
+}
+
+.popular__container .popular__image {
+    height: 100%;
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.popular__container .popular__image img {
+    height: 100%;
+    width: 100%;
+}
+
+.popular__text {
+    text-align: center;
+}
+
+.popular__text .stars * {
+    color: var(--nextnav-toggle);
+    font-size: .8rem;
+    margin-top: .6rem;
+}
+
+.popular__image .location {
+    position: absolute;
+    bottom: .7rem;
+    left: .5rem;
+    color: white;
+    font-size: 1.1rem;
+    font-weight: 400;
+}
+
+.popular__text .price h4 {
+    font-size: 1.1rem;
+    letter-spacing: 1px;
+    font-weight: 400;
+    color: var(--color-primary);
+}
+
+.lines .second .fir,
+.lines .first .sec {
+    transform: translateX(-5px);
+}
+
+.lines .second .sec {
+    transform: translateX(-10px);
+}
+
+.lines .second .thir {
+    transform: translateX(-15px);
+}
+
+.lines .second {
+    display: block;
+    margin-top: -1rem;
+    transform: translateX(5px);
+}
+
+.lines {
+    color: var(--nextnav-toggle);
+    padding: .4rem 0;
+}
+
+.price .price__text,
+.price .price__amount {
+    display: inline-block !important;
+}
+
+.price .price__text {
+    font-size: .8rem;
+    padding-left: 5px;
+    color: var(--nextnav-toggle);
+    letter-spacing: 1px;
+}

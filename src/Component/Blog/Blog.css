@@ -1,0 +1,119 @@
+.blog {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 2rem;
+    margin-top: 4rem;
+    padding-bottom: 4rem;
+}
+
+.blog__container {
+    border-radius: 5px;
+    padding: 1rem;
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-columns: repeat(1, 1fr);
+    box-shadow: 0 0 1rem var(--boxshadow);
+}
+
+.blog__container:hover {
+    /* transition: var(--transition); */
+    transition: background-color .5s ease-in-out;
+    background-color: var(--bg-primary);
+    color: white;
+}
+
+.blog__container .blog__image {
+    border-radius: 3px;
+    height: 100%;
+    width: 100%;
+    overflow: hidden !important;
+}
+
+.blog__image img {
+    height: 100%;
+    width: 100%;
+}
+
+.blog__container .blog__image img {
+    transition: var(--transition);
+}
+
+.blog__container:hover .blog__image img {
+    transition: var(--transition);
+    transform: scale(1.08);
+    /* filter: brightness(.5); */
+}
+
+.blog__content-heading p {
+    font-size: .8rem;
+    font-weight: 400;
+    color: var(--color-toggle);
+    letter-spacing: 1px;
+}
+
+.blog__content-heading span {
+    font-weight: 600;
+    font-size: .8rem;
+    letter-spacing: 1px;
+    background-color: var(--bg-primary);
+    padding: .5rem 1rem;
+    border-radius: 8px;
+    text-align: center;
+    transition: var(--transition);
+}
+
+.blog__container:hover span {
+    background-color: white;
+    color: var(--color-primary);
+}
+
+.blog__desc {
+    margin-top: 10px;
+}
+
+.blog__desc h3 {
+    color: var(--color-toggle);
+    font-size: 1.14rem;
+    font-weight: 400;
+}
+
+.blog__desc p {
+    font-size: .8rem;
+    font-weight: 400;
+    letter-spacing: 1px;
+    color: var(--color-toggle);
+    margin: 10px 0;
+}
+
+.blog__desc a {
+    font-size: .8rem;
+    color: var(--color-toggle);
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.blog__container:hover .blog__desc a {
+    color: white;
+}
+
+.blog__desc .icon {
+    font-size: 1rem;
+    transform: translateY(3px);
+    color: var(--color-primary);
+}
+
+.blog__container:hover .blog__desc .icon {
+    color: white;
+}
+
+@media screen and (max-width: 968px) {
+    .blog {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .blog {
+        grid-template-columns: 1fr;
+    }
+}

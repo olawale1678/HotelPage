@@ -1,0 +1,93 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+:root {
+  --bg-primary: #b63176;
+  --color-primary: #b63176;
+  --bg-primary-hover: #c5327e;
+  --theme-toggle: rgb(84, 82, 82);
+  --boxshadow: rgba(0, 0, 0, .2);
+  --transition: all .5s ease-in-out;
+  --nextnav-toggle: gray;
+  --color-toggle: black;
+  --bg-toggle: black;
+  --toggle-body: white;
+}
+
+.dark-mode {
+  --bg-primary: #31b675;
+  --color-primary: #31b675;
+  --bg-primary-hover: #369736;
+  --theme-toggle: white;
+  --boxshadow: white;
+  /* --theme-toggle: rgb(84, 82, 82); */
+  --transition: all .5s ease-in-out;
+  --nextnav-toggle: gray;
+  --color-toggle: white;
+  --bg-toggle: white;
+  --toggle-body: black;
+}
+
+body {
+  scroll-behavior: smooth;
+  margin: 0;
+  font-family: sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.App {
+  transition: var(--transition);
+  background-color: var(--toggle-body);
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.slick-dots li button:before {
+  color: var(--bg-toggle) !important;
+}
+
+.slick-dots li.slick-active button:before {
+  color: var(--bg-toggle) !important;
+}
+
+.container {
+  width: 92%;
+  margin: 0 auto;
+}
+
+.flex__span {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.primary-btn {
+  border: 1px solid transparent;
+  outline: none;
+  font-size: 1rem;
+  cursor: pointer;
+  font-weight: lighter;
+  padding: .4rem 1rem;
+  background-color: var(--bg-primary);
+  color: white;
+  border-radius: 3px;
+  text-align: center;
+  transition: var(--transition);
+}
+
+.primary-btn:hover {
+  border-color: var(--bg-primary);
+  color: var(--color-primary);
+  background-color: var(--bg-toggle);
+}

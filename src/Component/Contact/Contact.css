@@ -1,0 +1,132 @@
+.form {
+    display: grid;
+    grid-template-columns: 70% auto;
+}
+
+.contact {
+    padding: 3rem 0;
+}
+
+.contact .contact__heading h1 {
+    font-size: 1.4rem;
+    letter-spacing: 1px;
+    font-weight: 400;
+    margin-bottom: 1rem;
+}
+
+.contact .contact__heading p {
+    font-size: .92rem;
+    letter-spacing: 1px;
+    margin-bottom: 1rem;
+    font-weight: lighter;
+}
+
+.form form .one,
+.form form .two {
+    height: 100%;
+    width: 100%;
+}
+
+.form form .one p,
+.form form .two p {
+    font-size: .9rem;
+    font-weight: lighter;
+    margin: 2rem 0 .5rem 0;
+}
+
+.form form .one input,
+.form form .two input {
+    padding: .7rem 0;
+    font-size: 1.2rem;
+    width: 100%;
+    outline: none;
+    color: var(--nextnav-toggle);
+    letter-spacing: 1px;
+    border: 1px solid var(--nextnav-toggle);
+    text-indent: 18px;
+    font-weight: lighter;
+}
+
+.form form .one input {
+    margin-right: 1.6rem;
+}
+
+form .grid {
+    display: grid;
+    column-gap: 1.5rem;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.textarea textarea {
+    padding: .7rem 0;
+    outline: none;
+    text-indent: 18px;
+    font-weight: lighter;
+    font-size: 1.2rem;
+    width: 100%;
+}
+
+.textarea p {
+    font-size: .9rem;
+    font-weight: lighter;
+    padding: 1rem 0;
+}
+
+.response {
+    position: fixed;
+    text-align: justify;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%);
+    background-color: white;
+    z-index: 100;
+    height: 100%;
+    width: 100%;
+}
+
+.response__container {
+    width: 40vw;
+    transform: translateY(30vh);
+    margin: 0 auto;
+}
+
+.response__container * {
+    padding: 1rem 0;
+}
+
+.response button {
+    position: absolute;
+    top: 13vh;
+    right: 4rem;
+}
+
+@media screen and (max-width: 790px) {
+    .form {
+        grid-template-columns: none;
+    }
+}
+
+@media screen and (max-width: 690px) {
+    form .grid {
+        grid-template-columns: none;
+    }
+
+    .form form .one input {
+        margin: 0;
+    }
+
+    .response__container {
+        width: 90%;
+    }
+
+    .response button {
+        right: 2rem;
+    }
+}
+
+@media screen and (max-width: 428px) {
+    .response__container {
+        width: 100%;
+        padding-left: .7rem;
+    }
+}
